@@ -1,0 +1,920 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>location entropy spatio temporal &#8212; My sample book</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Content with notebooks" href="notebooks.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">My sample book</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome to your Jupyter Book
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="markdown.html">
+   Markdown Files
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="notebooks.html">
+   Content with notebooks
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   location entropy spatio temporal
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/experiment-theme-park.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fexperiment-theme-park.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/experiment-theme-park.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="location-entropy-spatio-temporal">
+<h1>location entropy spatio temporal<a class="headerlink" href="#location-entropy-spatio-temporal" title="Permalink to this headline">¶</a></h1>
+<p>This dataset comprises a set of users and their visits to various attractions in five theme parks (Disneyland, Epcot, California Adventure, Disney Hollywood and Magic Kindgom). The user-attraction visits are determined based on geo-tagged Flickr photos that are posted from Aug 2007 to Aug 2017 and retrieved using the Flickr API.</p>
+<p>All user-attraction visits in each themepark are stored in a single csv file that contains the following columns/fields:</p>
+<ul class="simple">
+<li><p>photoID: identifier of the photo based on Flickr.</p></li>
+<li><p>userID: identifier of the user based on Flickr.</p></li>
+<li><p>dateTaken: the date/time that the photo was taken (unix timestamp format).</p></li>
+<li><p>poiID: identifier of the attraction (Flickr photos are mapped to attraction based on their lat/long).</p></li>
+<li><p>poiTheme: category of the attraction (e.g., Roller Coaster, Family, Water, etc).</p></li>
+<li><p>poiFreq: number of times this attraction has been visited.</p></li>
+<li><p>rideDuration: the normal ride duration of this attraction.</p></li>
+<li><p>seqID: travel sequence no. (consecutive attraction visits by the same user that differ by &lt;8hrs are grouped as one travel sequence).</p></li>
+</ul>
+<div class="cell tag_full-width docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span> 
+<span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.max_rows&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.max_columns&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.width&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.max_colwidth&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">mode</span><span class="o">.</span><span class="n">chained_assignment</span> <span class="o">=</span> <span class="kc">None</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">math</span>
+<span class="kn">import</span> <span class="nn">os</span>
+
+
+<span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
+<span class="kn">import</span> <span class="nn">plotly.graph_objs</span> <span class="k">as</span> <span class="nn">go</span>
+<span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="kn">import</span> <span class="n">HBox</span><span class="p">,</span> <span class="n">Layout</span><span class="p">,</span> <span class="n">VBox</span>
+<span class="kn">import</span> <span class="nn">ipywidgets</span>
+
+<span class="kn">from</span> <span class="nn">tqdm</span> <span class="kn">import</span> <span class="n">tqdm</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+
+<span class="n">li_data</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">p_path</span> <span class="o">=</span> <span class="s1">&#39;/home/server/gli-data-science/akhiyar/location_entropy/data-sigir17/userVisits-sigir17/&#39;</span>
+<span class="n">poi_path</span> <span class="o">=</span> <span class="s1">&#39;/home/server/gli-data-science/akhiyar/location_entropy/data-sigir17/poiList-sigir17/&#39;</span>
+<span class="c1">## all file in user visit</span>
+<span class="n">display</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;filename&#39;</span><span class="p">:</span><span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">p_path</span><span class="p">)})</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
+<span class="c1">## load and combine data that we want</span>
+<span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">s_path</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">p_path</span><span class="p">)):</span>
+    
+    <span class="k">if</span> <span class="n">idx</span> <span class="ow">in</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">):</span>
+        <span class="n">city</span> <span class="o">=</span> <span class="n">s_path</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;-&#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+        
+
+        <span class="c1"># read and formatting</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">p_path</span><span class="o">+</span><span class="s1">&#39;/&#39;</span><span class="o">+</span><span class="n">s_path</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">)</span>
+        <span class="n">display</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+        <span class="n">data</span><span class="p">[</span><span class="s1">&#39;dateTakenRead&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;takenUnix&#39;</span><span class="p">],</span><span class="n">unit</span><span class="o">=</span><span class="s1">&#39;s&#39;</span><span class="p">)</span>
+        <span class="n">data</span><span class="p">[</span><span class="s1">&#39;city&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">city</span>
+        
+        <span class="c1">#data look like this</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">city</span><span class="p">,</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;dateTakenRead&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">(),</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;dateTakenRead&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">())</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;dateTakenRead&#39;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="s1">&#39;2012-01-01&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;poiID&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">nunique</span><span class="p">())</span>
+        
+
+        <span class="n">li_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+    
+<span class="n">df_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">(</span><span class="n">li_data</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;combine data&#39;</span><span class="p">)</span>
+<span class="n">df_data</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>filename</th>
+      <td>userVisits-disHolly-allPOI.csv</td>
+      <td>userVisits-caliAdv-allPOI.csv</td>
+      <td>README.txt</td>
+      <td>userVisits-disland-allPOI.csv</td>
+      <td>userVisits-MagicK-allPOI.csv</td>
+      <td>userVisits-epcot-allPOI.csv</td>
+    </tr>
+  </tbody>
+</table>
+</div></div><div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>nsid</th>
+      <th>takenUnix</th>
+      <th>poiID</th>
+      <th>poiTheme</th>
+      <th>poiFreq</th>
+      <th>rideDuration</th>
+      <th>seqID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>4617275371</td>
+      <td>10005149@N03</td>
+      <td>1274095158</td>
+      <td>5</td>
+      <td>Roller Coaster</td>
+      <td>2616</td>
+      <td>900</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>8235744245</td>
+      <td>10008488@N07</td>
+      <td>1354345925</td>
+      <td>6</td>
+      <td>Ride</td>
+      <td>5969</td>
+      <td>1020</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>8236810104</td>
+      <td>10008488@N07</td>
+      <td>1354346676</td>
+      <td>6</td>
+      <td>Ride</td>
+      <td>5969</td>
+      <td>1020</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>9513896740</td>
+      <td>100320969@N08</td>
+      <td>1375140897</td>
+      <td>2</td>
+      <td>Ride</td>
+      <td>2936</td>
+      <td>390</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>9511104781</td>
+      <td>100320969@N08</td>
+      <td>1375140906</td>
+      <td>2</td>
+      <td>Ride</td>
+      <td>2936</td>
+      <td>390</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+</div></div><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>disHolly 2016-08-19 09:19:52 2007-08-24 09:51:04
+20110 41983 13
+</pre></div>
+</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>nsid</th>
+      <th>takenUnix</th>
+      <th>poiID</th>
+      <th>poiTheme</th>
+      <th>poiFreq</th>
+      <th>rideDuration</th>
+      <th>seqID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>21636347373</td>
+      <td>10000151@N02</td>
+      <td>1445055661</td>
+      <td>17</td>
+      <td>Water</td>
+      <td>2110</td>
+      <td>420</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>8677571250</td>
+      <td>10004778@N07</td>
+      <td>1365918281</td>
+      <td>7</td>
+      <td>Family</td>
+      <td>2344</td>
+      <td>120</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>16998105937</td>
+      <td>10013542@N02</td>
+      <td>1429426348</td>
+      <td>17</td>
+      <td>Water</td>
+      <td>2110</td>
+      <td>420</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>9515529419</td>
+      <td>100344010@N06</td>
+      <td>1354336114</td>
+      <td>24</td>
+      <td>Family</td>
+      <td>6570</td>
+      <td>1500</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>14959134936</td>
+      <td>100373287@N02</td>
+      <td>1407466438</td>
+      <td>6</td>
+      <td>Kiddie</td>
+      <td>3509</td>
+      <td>120</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
+</div></div><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>caliAdv 2016-08-22 08:46:26 2007-08-24 08:07:37
+35963 57177 25
+</pre></div>
+</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>nsid</th>
+      <th>takenUnix</th>
+      <th>poiID</th>
+      <th>poiTheme</th>
+      <th>poiFreq</th>
+      <th>rideDuration</th>
+      <th>seqID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>5858403310</td>
+      <td>10004778@N07</td>
+      <td>1308262550</td>
+      <td>6</td>
+      <td>Ride</td>
+      <td>1665</td>
+      <td>120.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>5857850631</td>
+      <td>10004778@N07</td>
+      <td>1308270702</td>
+      <td>26</td>
+      <td>Family</td>
+      <td>18710</td>
+      <td>900.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>5858399220</td>
+      <td>10004778@N07</td>
+      <td>1308631356</td>
+      <td>6</td>
+      <td>Ride</td>
+      <td>1665</td>
+      <td>120.0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>8277294024</td>
+      <td>10004778@N07</td>
+      <td>1355568624</td>
+      <td>26</td>
+      <td>Family</td>
+      <td>18710</td>
+      <td>900.0</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>9219062165</td>
+      <td>10004778@N07</td>
+      <td>1373030964</td>
+      <td>29</td>
+      <td>Water</td>
+      <td>10427</td>
+      <td>900.0</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
+</div></div><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>disland 2016-08-22 13:01:35 2007-08-24 03:26:06
+56991 119987 30
+combine data
+</pre></div>
+</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>nsid</th>
+      <th>takenUnix</th>
+      <th>poiID</th>
+      <th>poiTheme</th>
+      <th>poiFreq</th>
+      <th>rideDuration</th>
+      <th>seqID</th>
+      <th>dateTakenRead</th>
+      <th>city</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>4617275371</td>
+      <td>10005149@N03</td>
+      <td>1274095158</td>
+      <td>5</td>
+      <td>Roller Coaster</td>
+      <td>2616</td>
+      <td>900.0</td>
+      <td>1</td>
+      <td>2010-05-17 11:19:18</td>
+      <td>disHolly</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>8235744245</td>
+      <td>10008488@N07</td>
+      <td>1354345925</td>
+      <td>6</td>
+      <td>Ride</td>
+      <td>5969</td>
+      <td>1020.0</td>
+      <td>2</td>
+      <td>2012-12-01 07:12:05</td>
+      <td>disHolly</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>8236810104</td>
+      <td>10008488@N07</td>
+      <td>1354346676</td>
+      <td>6</td>
+      <td>Ride</td>
+      <td>5969</td>
+      <td>1020.0</td>
+      <td>2</td>
+      <td>2012-12-01 07:24:36</td>
+      <td>disHolly</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>9513896740</td>
+      <td>100320969@N08</td>
+      <td>1375140897</td>
+      <td>2</td>
+      <td>Ride</td>
+      <td>2936</td>
+      <td>390.0</td>
+      <td>3</td>
+      <td>2013-07-29 23:34:57</td>
+      <td>disHolly</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>9511104781</td>
+      <td>100320969@N08</td>
+      <td>1375140906</td>
+      <td>2</td>
+      <td>Ride</td>
+      <td>2936</td>
+      <td>390.0</td>
+      <td>3</td>
+      <td>2013-07-29 23:35:06</td>
+      <td>disHolly</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<hr class="docutils" />
+<p>We create a function to calculate the Shannon Entropy according to the formula. (<a class="reference external" href="https://en.wiktionary.org/wiki/Shannon_entropy">https://en.wiktionary.org/wiki/Shannon_entropy</a> or refer test docs).</p>
+<ul class="simple">
+<li><p>Captures: both frequency and diversity.</p></li>
+<li><p>Intuitively: expected number of users visiting a location.</p></li>
+</ul>
+<a class="bg-primary mb-1 reference internal image-reference" href="./figure/location_entropy.png"><img alt="fishy" class="bg-primary mb-1 align-center" src="./figure/location_entropy.png" style="width: 500px;" /></a>
+<div class="cell tag_full-width docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">calculateEntropy</span><span class="p">(</span><span class="n">pId</span><span class="p">,</span> <span class="n">poiID</span><span class="p">,</span> <span class="n">userId</span><span class="p">,</span> <span class="n">poiFreq</span><span class="p">):</span>
+    <span class="n">l</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">poiFreq</span><span class="p">[</span><span class="n">poiID</span><span class="o">==</span><span class="n">pId</span><span class="p">])</span>
+    <span class="n">entropy</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">uId</span> <span class="ow">in</span> <span class="n">userId</span><span class="p">[</span><span class="n">poiID</span><span class="o">==</span><span class="n">pId</span><span class="p">]:</span>
+        <span class="n">c</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">poiFreq</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">logical_and</span><span class="p">([</span><span class="n">poiID</span><span class="o">==</span><span class="n">pId</span><span class="p">],</span> <span class="p">[</span><span class="n">userId</span><span class="o">==</span><span class="n">uId</span><span class="p">])[</span><span class="mi">0</span><span class="p">]])</span>
+        <span class="n">p</span> <span class="o">=</span> <span class="n">c</span><span class="o">/</span><span class="n">l</span>
+        <span class="n">entropy</span> <span class="o">=</span> <span class="n">entropy</span><span class="o">+</span><span class="n">p</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">log2</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+    <span class="n">entropy</span> <span class="o">=</span> <span class="n">entropy</span><span class="o">*</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">entropy</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_full-width docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## define daterange we want to observe</span>
+<span class="n">li_range</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;all&#39;</span><span class="p">:(</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2007</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2017</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)),</span>
+             <span class="s1">&#39;lower&#39;</span><span class="p">:(</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2007</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2012</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)),</span>
+              <span class="s1">&#39;upper&#39;</span><span class="p">:(</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2012</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2017</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">))}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># start = datetime.now()</span>
+<span class="c1"># print(&quot;start at: {}&quot;.format(start))</span>
+
+    
+<span class="c1"># def myfunc(tup_func):</span>
+<span class="c1">#     city = tup_func[0]</span>
+<span class="c1">#     lr = tup_func[1]</span>
+<span class="c1">#     data = df_data[(df_data[&#39;city&#39;] == city) \</span>
+<span class="c1">#           &amp; (df_data[&#39;dateTakenRead&#39;] &gt;= li_range[lr][0]) &amp; (df_data[&#39;dateTakenRead&#39;] &lt; li_range[lr][1])]</span>
+<span class="c1">#     print(&#39;{}\t{} - {}\n&#39;.format(city,str(li_range[lr][0].date()), str(li_range[lr][1].date())))</span>
+<span class="c1">#     userId = data[&#39;nsid&#39;].values</span>
+<span class="c1">#     poiID = data[&#39;poiID&#39;].values</span>
+<span class="c1">#     poiFreq = data[&#39;poiFreq&#39;].values</span>
+
+
+<span class="c1">#     ## Now calculate and store Location Entropy of each locations and user provided in the loaded dataset</span>
+<span class="c1">#     location_id = []</span>
+<span class="c1">#     location_entropy = []</span>
+
+<span class="c1">#     for pid in (np.unique(poiID)):</span>
+<span class="c1">#         le = calculateEntropy(pid, poiID, userId, poiFreq)</span>
+<span class="c1">#         location_id.append(pid)</span>
+<span class="c1">#         location_entropy.append(le)</span>
+        
+
+<span class="c1">#     df_le = pd.DataFrame({&#39;location_id&#39;:location_id, &#39;location_entropy&#39;:location_entropy, </span>
+<span class="c1">#                           &#39;city&#39;:city, &#39;date_split&#39;:lr})</span>
+<span class="c1">#     return df_le</span>
+    
+
+<span class="c1"># from itertools import product</span>
+<span class="c1"># from concurrent.futures import ProcessPoolExecutor</span>
+<span class="c1"># # create multiprocessing job to loop each theme park and date range specified</span>
+<span class="c1"># li_df_le = []</span>
+<span class="c1"># with ProcessPoolExecutor(max_workers=16) as executor:</span>
+<span class="c1">#     for r in executor.map(myfunc, list(product(df_data[&#39;city&#39;].unique(), li_range))):</span>
+<span class="c1">#         li_df_le.append(r)</span>
+    
+<span class="c1"># df_le = pd.concat(li_df_le)   </span>
+
+<span class="c1"># end = datetime.now()</span>
+<span class="c1"># print(&quot;end at: {}&quot;.format(end))</span>
+<span class="c1"># print(&quot;elapsed: {}&quot;.format(end-start))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="cell tag_full-width docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># li_dbox = []</span>
+<span class="c1"># for city in df_data[&#39;city&#39;].unique():</span>
+<span class="c1">#     df_le_sel = df_le[df_le[&#39;city&#39;] == city]</span>
+<span class="c1">#     mean_order = int(df_le_sel[&#39;location_entropy&#39;].mean())</span>
+    
+<span class="c1">#     df_le_sel = df_le_sel.set_index([&quot;location_id&quot;, &quot;date_split&quot;])[&#39;location_entropy&#39;]\</span>
+<span class="c1">#                             .unstack(level=1).reset_index()</span>
+    
+<span class="c1">#     df_poi = pd.read_csv(poi_path+&#39;POI-{}.csv&#39;.format(city), sep=&#39;;&#39;)</span>
+<span class="c1">#     df_poi = df_poi[[&#39;poiID&#39;,&#39;poiName&#39;,&#39;theme&#39;,&#39;rideDuration&#39;]]</span>
+
+<span class="c1">#     df_le_sel = pd.merge(df_le_sel, df_poi, left_on=&#39;location_id&#39;, right_on=&#39;poiID&#39;, how=&#39;left&#39;)</span>
+
+<span class="c1">#     ## for display top poi by location entropy value</span>
+<span class="c1">#     df_le_sel_dis = df_le_sel.sort_values(by=&#39;all&#39;, ascending=False)\</span>
+<span class="c1">#                             .head(8).reset_index(drop=True)[[&#39;poiName&#39;, &#39;theme&#39;, &#39;all&#39;]]</span>
+<span class="c1">#     df_le_sel_dis.index = np.arange(1, len(df_le_sel_dis)+1)</span>
+<span class="c1">#     ##</span>
+    
+<span class="c1">#     fig = go.Figure()</span>
+<span class="c1">#     for lr in li_range:</span>
+<span class="c1">#         fig.add_trace(go.Scatter(</span>
+<span class="c1">#             x=df_le_sel[&#39;location_id&#39;],</span>
+<span class="c1">#             y=df_le_sel[lr],</span>
+<span class="c1">#             name=lr,</span>
+<span class="c1">#             text=df_le_sel[&#39;poiName&#39;]</span>
+
+<span class="c1">#         ))</span>
+
+    
+<span class="c1">#     fig.add_hline(y=mean_order, line_dash=&quot;dot&quot;,</span>
+<span class="c1">#                   annotation_text=&quot;avg&lt;br&gt;{}&quot;.format(mean_order), </span>
+<span class="c1">#                   annotation_position=&quot;top right&quot;)</span>
+
+
+<span class="c1">#     fig.update_traces(</span>
+<span class="c1">#         hovertemplate=&#39;%{text}&lt;br&gt;%{y}&#39;)</span>
+    
+    
+<span class="c1">#     legend_dict = \</span>
+<span class="c1">#         legend=dict(</span>
+<span class="c1">#                 orientation=&quot;h&quot;,</span>
+<span class="c1">#                 yanchor=&quot;bottom&quot;,</span>
+<span class="c1">#                 y=0.95,</span>
+<span class="c1">#                 xanchor=&quot;left&quot;,</span>
+<span class="c1">#                 x=0,</span>
+<span class="c1">#                 traceorder=&quot;normal&quot;,</span>
+<span class="c1">#                 title=&#39;&#39;,</span>
+<span class="c1">#                 title_font_family=&quot;Courier&quot;,</span>
+<span class="c1">#                 font=dict(</span>
+<span class="c1">#                     family=&quot;Courier&quot;,</span>
+<span class="c1">#                     size=16,</span>
+<span class="c1">#                     color=&quot;black&quot;</span>
+<span class="c1">#                 ),</span>
+<span class="c1">#                 bgcolor=&quot;#dfe4ea&quot;,</span>
+<span class="c1">#                 bordercolor=&quot;Black&quot;,</span>
+<span class="c1">#                 borderwidth=1</span>
+<span class="c1">#             )</span>
+
+<span class="c1">#     fig.update_layout( </span>
+<span class="c1">#                 xaxis={&#39;showline&#39;: True, &#39;visible&#39;: True, &#39;showticklabels&#39;: True, \</span>
+<span class="c1">#                        &#39;showgrid&#39;: True, &#39;automargin&#39;: True, &#39;title&#39;:&#39;id&#39;},</span>
+<span class="c1">#                 yaxis={&#39;showline&#39;: False, &#39;visible&#39;: True, &#39;showticklabels&#39;: True,\</span>
+<span class="c1">#                        &#39;showgrid&#39;: True,  &#39;automargin&#39;: True, &#39;title&#39;:&#39;entropy&#39;},</span>
+<span class="c1">#                       uniformtext_minsize=8, uniformtext_mode=&#39;hide&#39;, margin=\</span>
+<span class="c1">#                       {&#39;l&#39;:70, &#39;r&#39;:70, &#39;t&#39;:70, &#39;b&#39;:70},legend=legend_dict,title=city,\</span>
+<span class="c1">#                       template=&#39;presentation&#39;, hoverlabel=dict(font=dict(family=&#39;sans-serif&#39;, size=17)))</span>
+
+<span class="c1">#     f1 = go.FigureWidget(fig, layout=Layout(width=&#39;70%&#39;))</span>
+    
+<span class="c1">#     dbox = HBox([f1, ipywidgets.HTML(df_le_sel_dis.to_html(), layout=Layout(width=&#39;30%&#39;))])</span>
+<span class="c1">#     li_dbox.append(dbox)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_full-width docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># for b in li_dbox:</span>
+<span class="c1">#     display(b,layout=Layout(width=&#39;100%&#39;,display=&#39;inline-flex&#39;,flex_flow=&#39;row wrap&#39;))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<ul class="simple">
+<li><p>theme parks with family topics are always included in the top 8 largest location entropy, showing family topics are more popular for visitors.</p></li>
+<li><p>we see that there is a slight entropy relationship with the period of data taken from the early period 2007 - 2012 data tends to have a small entropy which marks a theme park that is still unknown to many people, and tends to increase in 2012 and above.</p></li>
+</ul>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="notebooks.html" title="previous page">Content with notebooks</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By The Jupyter Book Community<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
